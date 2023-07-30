@@ -1,3 +1,5 @@
+# This branch has code that attempts to concatonate the indices returned from user guesses
+
 import random
 
 def get_random_word():
@@ -43,11 +45,6 @@ def start_game():
     print_indexes_and_underscores(new_word, position)
     
     
-
-
-
-
-
 def play_hangman():
     while True:
         response = input("Do you want to play 'Hangman'? (y/n): ").lower()
@@ -55,7 +52,7 @@ def play_hangman():
             start_game()
             break
         elif response == 'n':
-            print("Terminating the program.")
+            print("Terminating the program!")
             break
         else:
             print("Did not understand response, please select y or n")
